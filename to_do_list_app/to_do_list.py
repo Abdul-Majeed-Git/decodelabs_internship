@@ -3,6 +3,8 @@ my_tasks: list = []
 
 def add_task(user_input):
     global item_list
+    if not my_tasks:
+        load_data()
     my_tasks.append({"id": len(my_tasks)+ 1 ,"task": user_input})
     file_add = json.dumps(my_tasks)
     with open("list.json",'w') as file:
@@ -15,7 +17,13 @@ def view_list():
         for i,j in enumerate(my_tasks):
             print(i+1,".",j['task'])
 
-
+def load_data():
+    global my_tasks
+    try:
+        with open("list.json",'r') as file:
+            my_tasks = json.load(file)
+    except:
+        my_tasks= []
 if __name__ == "__main__":
     while True:
         print("----Menu----")
