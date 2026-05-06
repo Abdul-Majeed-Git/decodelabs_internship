@@ -7,16 +7,16 @@ def add_task(user_input):
         load_data()
     my_tasks.append({"id": len(my_tasks)+ 1 ,"task": user_input})
     file_add = json.dumps(my_tasks)
-    with open("list.json",'w') as file:
+    with open("D:\\decocelabs projects\\to_do_list_app\\list.json",'w') as file:
         json.dump(my_tasks,file,indent=4)
-
+    print(f"{user_input}, added successfully!")
 def view_list():
     global my_tasks
-    with open("list.json",'r') as f:
+    print("====All Items====")
+    with open("D:\\decocelabs projects\\to_do_list_app\\list.json",'r') as f:
         my_tasks = json.load(f)
         for i,j in enumerate(my_tasks):
             print(i+1,".",j['task'])
-
 def load_data():
     global my_tasks
     try:
