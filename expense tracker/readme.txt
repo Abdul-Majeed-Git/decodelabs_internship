@@ -1,5 +1,5 @@
 user input
 error handling
-add in list
-add all items in list 
+initial counter
+add all items 
 condition: while
