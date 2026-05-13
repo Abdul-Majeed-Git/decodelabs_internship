@@ -1,24 +1,31 @@
-total = 0
+total = 0.0
 while True:
-    print("----Menu----")
+    print("\n" + "="*20)
+    print("   EXPENSE TRACKER")
+    print("="*20)
     print("1.Add expenses.")
-    print("2.Quit(total)")
+    print("2.Quit and show total.")
     user = input("Enter you choice: ")
     if user == '1':
         while True:   
-            data = input("Enter 'q' to stop or press enter your expanses to continue: ").lower()
+            data = input("Enter expense amount (or 'q' to stop): ").lower()
             if data == 'q':
                 break
-            else:        
+            elif data.strip() == "":
+                continue
+            else:
                 try: 
-                    expense = int(data)     
+                    expense = float(data)
+                    if expense < 0:
+                        print("Expense cannot be negative!")     
+                        continue
                     total += expense       
                     print(f"Added {expense} to total.")
                 except ValueError:
-                    print("Invalid Data!!")
+                    print("Invalid Data! Please enter a number.")
     elif user == '2':
-        print(f"Your Total expense:{total}")
+        print(f"\nYour Total expense:{total:.2f}")
         print("Exiting...")
         break
     else:
-        print("Invalid Choice!")
+        print("Invalid Choice! Select 1 or 2.")
