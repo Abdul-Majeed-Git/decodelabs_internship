@@ -1,22 +1,24 @@
-<<<<<<< HEAD
 ======================
 Simple Expense Tracker
 ======================
-A lightweight Python command-line application to track 
-and manage your daily expenses efficiently.
+Author   | Abdul-Majeed
+Language | Python 3.12
 
 ============
 Description:
 ============
-This project is simple CLI-base program that allow users to keep 
+This project is lightweight CLI-base program that allow users to keep 
 calculate the total of their spendings and provides final total upon exiting.
-----Features---
+
+=========
+Features:
+=========
 1.Easy nevigation between adding expenses and quiting or total output.
 2.Simple and intuitive user interface.
 3.Prevents program from crashing if a user enters non-numeric data.
 
 ===========
-How to Run:
+How to Run?
 ===========
 1. Ensure you have Python installed on your system.
 2. Download the expensetracker.py file.
@@ -26,7 +28,7 @@ How to Run:
 6. Follow the on-screen prompts to enter your expenses.
 
 ===========
-How to Use:
+How to Use?
 ===========
 -> Select 1 from menu to start adding expense.
 -> Input the amount and press "Enter".
