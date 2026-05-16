@@ -16,7 +16,7 @@ It allows users to generate highly secure, random passwords using cryptographic-
 Features:
 =========
 ->| Quick generation of a 20-character secure password.
-->| Allow users to generate password of their own choice of length.
+->| allows users to generate password of their own choice of length.
 ->| Password includes mix type of character(uppercase , lowercase, digits , special symbols).
 ->| Handles sudden exits (ctrl +c on linux) and invalid menu choices.
 
