@@ -1,7 +1,6 @@
 ======================
   Password generator
 ======================
-
 Author   | Abdul-Majeed
 Language | Python 3.12
 Libraries| random , secrets , string 
