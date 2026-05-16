@@ -13,9 +13,9 @@ calculate the total of their spendings and provides final total upon exiting.
 =========
 Features:
 =========
-1.Easy nevigation between adding expenses and quiting or total output.
-2.Simple and intuitive user interface.
-3.Prevents program from crashing if a user enters non-numeric data.
+->| Easy nevigation between adding expenses and quiting or total output.
+->| Simple and intuitive user interface.
+->| Prevents program from crashing if a user enters non-numeric data.
 
 ===========
 How to Run?
